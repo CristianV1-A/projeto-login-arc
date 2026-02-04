@@ -1,7 +1,64 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Ciano Luminoso - HEX #00FFFF
    Verde Neon - HEX #00FF00
    Amarelo Brilhoso - HEX #FFF00
    Vermelho Vibrante - HEX #FF0000
 */ 
+
+*{
+   font-family: 'Barlow', sans-serif;
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+body, html{
+   background: url(../imagens/arc_raiders_4k_wallpaper_by_wallpaper_background_djxfxj0-pre.jpg);
+   height: 100vh;
+   width: 100vw;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center ;
+   
+}
+
+main{
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+}
+section#login{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   overflow: hidden;
+
+   background-color:bisque;
+   width: 300px;
+   height: 500px;
+   border-radius: 20px;
+   box-shadow: 0px 0px 10px black;
+
+   transition: width .2s, height .2s;
+   transition-timing-function: ease;
+
+}
+
+section#login > div#imagem{
+   
+   background: white url(../imagens/ARC_Raider_Stacked_Black_Color.png) no-repeat;
+   background-size:contain;
+   background-position: center;
+   height: 85px;
+   margin: auto;
+   margin-top: 2px;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
+}
+
+
+section#login > div#formulario{
+   display: block;
+   padding: 10px;
+}
