@@ -3,7 +3,7 @@
 
 /* Ciano Luminoso - HEX #00FFFF
    Verde Neon - HEX #00FF00
-   Amarelo Brilhoso - HEX #FFF00
+   Amarelo Brilhoso - HEX #FFF00F
    Vermelho Vibrante - HEX #FF0000
 */ 
 
@@ -35,7 +35,7 @@ section#login{
    transform: translate(-50%, -50%);
    overflow: hidden;
 
-   background-color:bisque;
+   background-color:rgb(12, 13, 32);
    width: 300px;
    height: 500px;
    border-radius: 20px;
@@ -53,7 +53,7 @@ section#login > div#imagem{
    background-position: center;
    height: 85px;
    margin: auto;
-   margin-top: 2px;
+   
    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
 }
 
@@ -61,6 +61,7 @@ section#login > div#imagem{
 section#login > div#formulario{
    display: block;
    padding: 10px;
+   color: white;
 }
 
 div#formulario{
@@ -71,4 +72,49 @@ div#formulario{
 
 div#formulario > p{
    font-size: 0.8em;
+   color: white;
+}
+
+div.campo > input{
+   height: 30px;
+   text-align: center;
+   border-radius: 15px;
+}
+
+form > div.campo{
+
+   display: block;
+   width: 100%;
+   height: 50px;
+   padding: 10px;
+   margin-bottom: 5px;
+   
+
+
+}
+
+form > input[type=submit]{
+   display: block;
+   font-weight: bolder;
+   font-size: 1em;
+   width: 100%;
+   height: 40px;
+   background-color:#f3c737;
+   border-radius: 20px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+   margin-top: 20px;
+   border: none;
+   margin-bottom: 10px;
+
+}
+form > a.botao{
+   display: block;
+   text-align: center;
+   padding: 5px;
+   font-size: 1em;
+   height: 40px;
+   text-decoration: none;
+   color: white;
+   border-style: solid;
+   border-radius: 20px;
 }
